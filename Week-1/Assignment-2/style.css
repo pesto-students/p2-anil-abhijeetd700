@@ -1,0 +1,143 @@
+*{
+    /* list-style: none; */
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato'
+}
+
+.container{
+    display: flex;
+    /* border: 2px solid blue */
+}
+
+.sidebar{
+    background:#D7DBDD;
+    display: flex;
+    flex-direction: column;
+    /* width: 30px; */
+    /* border: 2px solid red; */
+    width: 3vw;
+    height: 580px;
+    justify-content: space-around;
+}
+
+.sidebar .icon{
+    padding-left: 10px;
+}
+
+.main-container{
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 2px solid red; */
+    width: 97vw;
+}
+
+.content{
+    background-color: #424949;
+}
+
+.img{
+    margin: 30px;
+}
+
+.footer{
+    display: flex;
+    background-color: #1F618D;
+    /* border: 2px solid green; */
+}
+
+.img-bottom{
+    margin: 10px;
+    margin-bottom: 23px;
+}
+
+.main-container .text-content{
+    margin-top: 30px;
+    color: white;
+}
+
+.footer .text-content{
+    margin-top: 30px;
+    color: white;
+}
+
+.span-icons{
+    padding-right: 20px;
+}
+
+.upper-content{
+    display: flex;
+    background-color: #424949;
+    /* border: 2px solid green; */
+}
+
+.lower-content{
+    display: flex;
+    /* border: 2px solid brown; */
+}
+
+.footer .icons-container{
+    margin-left:400px ;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 500px; */
+    /* padding-right: 20px; */
+}
+
+.bottom-icons{
+    padding-right: 150px;
+}
+
+.bottom-icons > .fa-solid{
+    color: white;
+}
+
+#songs{
+    width: 100%;
+}
+
+#songs td{
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+}
+
+#songs tr:nth-child(even){background-color: #D7DBDD;}
+
+.catty{
+    border: 1px solid black;
+    color: blue;
+}
+
+.music-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    list-style-type: none;
+    padding: 5px 10px 0px;  
+  }
+
+.music-list > li {
+display: flex;
+padding: 0 20px;
+min-height: 50px;
+align-items:center;
+
+}
+
+.music-list > li p {
+    flex: 0 0 25%;
+  }
+
+.music-list > li span.catty-cloud {     
+    border: 1px solid black;
+    font-size: 0.6em;
+    padding: 6px;
+    color: blue;
+}
+
+.music-list > li:nth-child(2n) {      
+    background-color: #f2f2f2;
+}
