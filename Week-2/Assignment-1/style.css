@@ -1,0 +1,78 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+body{
+    background-color: lightblue;
+}
+header{
+    text-align:center;
+}
+.header-container{
+    display: flex;
+    justify-content:center;
+    margin-top: 15px;
+}
+.main-container{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main-container__aside{
+    padding: 10px;
+    width: 50%;
+}
+.main-conatiner__articles{
+    padding: 10px;
+    width: 50%;
+}
+.main-conatiner__articles__title{
+    text-align: center;
+    padding: 2px;
+    padding-bottom: 5px;
+}
+article{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main-container__aside__image{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.form{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.footer-container{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.form__fieldset{
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#form__submitButton{
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#form__submitButton:hover{
+    background-color: #4CAF50;
+}
