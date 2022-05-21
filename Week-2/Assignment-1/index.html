@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Blog Website</title>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <h1>Welcome to some amazing blogs</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean justo orci, tempor non hendrerit in, ultrices in nisi. Nulla vehicula malesuada nisl eu facilisis. Pellentesque sollicitudin justo neque, sed dapibus tellus congue non.</p>
+        </header>
+    </div>
+    <div class="main-container">
+        <div class="main-container__aside">
+            <p>Pellentesque sed enim sit amet eros pellentesque vestibulum. Fusce iaculis sollicitudin diam, at elementum enim efficitur vitae.</p>
+            <a href="#"><img src="./download.jpg" alt="" width="500" height="300" class="main-container__aside__image"></a>
+        </div>
+        <div class="main-conatiner__articles">
+            <article>
+                <h3 class="main-conatiner__articles__title">Article-1 Title</h3>
+                <p>Sed lorem magna, blandit id aliquam quis, accumsan blandit enim. Mauris semper, urna vitae ultricies porttitor, risus odio pretium elit, ac imperdiet metus ex ut elit. Praesent mauris nisi, tincidunt id rutrum ut, bibendum in lectus. Sed tincidunt, risus commodo hendrerit iaculis, nisl elit viverra elit, vitae rutrum quam nunc laoreet turpis....<a href="#">Read More</a></p>
+                <br>
+                <hr>
+            </article>
+            <article>
+                <h3 class="main-conatiner__articles__title">Article-2 Title</h3>
+                <p>Sed lorem magna, blandit id aliquam quis, accumsan blandit enim. Mauris semper, urna vitae ultricies porttitor, risus odio pretium elit, ac imperdiet metus ex ut elit. Praesent mauris nisi, tincidunt id rutrum ut, bibendum in lectus. Sed tincidunt, risus commodo hendrerit iaculis, nisl elit viverra elit, vitae rutrum quam nunc laoreet turpis....<a href="#">Read More</a></p>
+                <br>
+                <hr>
+            </article>
+            <article>
+                <h3 class="main-conatiner__articles__title">Article-3 Title</h3>
+                <p>Sed lorem magna, blandit id aliquam quis, accumsan blandit enim. Mauris semper, urna vitae ultricies porttitor, risus odio pretium elit, ac imperdiet metus ex ut elit. Praesent mauris nisi, tincidunt id rutrum ut, bibendum in lectus. Sed tincidunt, risus commodo hendrerit iaculis, nisl elit viverra elit, vitae rutrum quam nunc laoreet turpis....<a href="#">Read More</a></p>
+                <br>
+                <hr>
+            </article>
+        </div>
+    </div>
+    <div class="form">
+        <form>
+            <fieldset class="form__fieldset">
+                <legend>Personal Info</legend>
+                <label for="gender">Title</label>
+                <input type="radio" name="gender" id="Mr">
+                <label for="Mr">Mr</label>
+                <input type="radio" name="gender" id="Mrs">
+                <label for="Mrs">Mrs</label>
+                <input type="radio" name="gender" id="Miss">
+                <label for="Miss">Miss</label>
+                <br><br>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname">
+            </fieldset>
+            
+            <fieldset class="form__fieldset">
+                <legend>Contact</legend>
+                <label for="email">Email ID</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="cnf_password">Confirm password</label>
+                <input type="password" name="cnf_password" id="cnf_password">
+                <br><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone">
+                <br><br>
+                <label for="country">Country : </label>
+                <select name="country" id="country">
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                </select>
+                <br><br>
+                <input type="checkbox" id="t&c" name="t&c">
+                <label for="t&c">I agree to the <a href="#">terms and conditions</a></label><br>
+            </fieldset>
+            <br>
+            <button type="submit" name="submit" id="form__submitButton">Sign Up</button>
+        </form>
+    </div>
+    <div class="footer-container">
+        <footer>
+            Copyright @ 2022
+        </footer>
+    </div>
+</body>
+</html>
