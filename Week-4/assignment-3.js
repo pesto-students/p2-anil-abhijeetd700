@@ -1,4 +1,4 @@
-const Fib = (n)=>({
+const fib = (n)=>({
     [Symbol.iterator]: () => {
       let i = 1;
       let old =0, new1 = 0;
@@ -21,7 +21,7 @@ const Fib = (n)=>({
     }
 })
 
-for (let num of Fib(5)) {
+for (let num of fib(5)) {
     console.log(num);
 }
   

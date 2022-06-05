@@ -3,7 +3,7 @@ const STATE = {
   REJECTED: "rejected",
   PENDING: "pending"
 };
-class Promise {
+class MyPromise {
   constructor(cb) {
     this.value;
     this.state = STATE.PENDING;
@@ -56,7 +56,7 @@ class Promise {
   }
 
   then(thenCb, catchCb) {
-    return new Promise((resolve, reject) => {
+    return new MyPromise((resolve, reject) => {
       this.thenCbs.push((result) => {
         if (thenCb == null) {
           resolve(result);
@@ -99,7 +99,7 @@ class Promise {
 const getNumber = () => {
   let randomNum = Math.floor(Math.random() * 1000);
 
-  return new Promise((resolve, reject) => {
+  return new MyPromise((resolve, reject) => {
     setTimeout(() => {
       if (randomNum % 5 !== 0) {
         resolve(randomNum);
