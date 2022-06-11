@@ -1,0 +1,14 @@
+{
+  "name": "assignment-4",
+  "version": "1.0.0",
+  "description": "Assignment-4",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Abhijeet",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
+}
