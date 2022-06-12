@@ -3,7 +3,7 @@ const cal = require('./calculator');
 describe('Calculator test',
 ()=>{
     test('Addition of 5 & 4 should be 9',()=>{
-        expect(cal.sum(5,4)).toBe(9);
+        expect(cal.sum('5','4')).toBe(9);
     });
     test("subtracting 2 from 10 should return 8", () => {
         var result = cal.diff(10,2)
