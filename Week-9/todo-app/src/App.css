@@ -55,3 +55,13 @@ height: 45px;
 outline: none;
 border: none;
 }
+.heading{
+  font-size:6rem;
+  font-weight:600;
+  margin-bottom:2rem;
+  color:solid black;
+  text-transform:lowercase;
+  text-align:center;
+  padding:20px 0;
+  line-height:1.5em;
+}

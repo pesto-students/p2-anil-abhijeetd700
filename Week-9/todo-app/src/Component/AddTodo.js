@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function InputTodo(props) {
+function AddTodo(props) {
 
   const {addTodoItem} = props
 
@@ -10,7 +10,7 @@ function InputTodo(props) {
     setTitle(e.target.value)
   }
 
-  const handleSubmit=(e)=>{
+  const addTodo=(e)=>{
     e.preventDefault()
     addTodoItem(title)
     setTitle('')
@@ -19,7 +19,7 @@ function InputTodo(props) {
 
   return (
     
-    <form onSubmit={handleSubmit} className='form-container'>
+    <form onSubmit={addTodo} className='form-container'>
         <input name='title' className='input-text' type='text' placeholder='Add Todo...' value={title} onChange={(e)=>{handleInputChange(e)}}/>
         <button className='input-submit'>Submit</button>
     </form>
@@ -27,4 +27,4 @@ function InputTodo(props) {
   )
 }
 
-export default InputTodo
+export default AddTodo

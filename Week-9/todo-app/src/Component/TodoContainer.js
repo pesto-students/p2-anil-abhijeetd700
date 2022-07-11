@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import InputTodo from './InputTodo'
+import AddTodo from './AddTodo'
 import TodoList from './TodoList'
 import {v4 as uuidv4} from 'uuid'
 
@@ -55,17 +55,8 @@ function TodoContainer() {
   return (
     <div className='container'>
       <div className='inner'>
-        <h1 style={{
-            fontSize: "6rem",
-            fontWeight: "600",
-            marginBottom: "2rem",
-            color: 'black',
-            textTransform: "lowercase",
-            textAlign: "center",
-            padding: "20px 0",
-            lineHeight: "1.5em"
-        }}>To-do's</h1>
-        <InputTodo addTodoItem={addTodoItem}/>
+        <h1 className='heading'>To-do's</h1>
+        <AddTodo addTodoItem={addTodoItem}/>
         <ul>
           <TodoList todos={todos} handleChange={handleChange} deleteTodo={deleteTodo}/>
         </ul>
