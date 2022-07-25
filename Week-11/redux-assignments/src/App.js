@@ -1,7 +1,7 @@
 import './App.css';
 import {useState} from 'react'
 import lightsStore from "./redux/lights/lightsStore";
-// import stepStore from './redux/steps/stepStore';
+import stepStore from './redux/steps/stepStore';
 import { Provider } from "react-redux";
 import Room from './components/Room';
 import Steps from './components/Steps';
@@ -29,9 +29,9 @@ function App() {
           </Provider>
         </>:
         <>
-          {/* <Provider store={stepStore}>
+          <Provider store={stepStore}>
             <Steps/>
-          </Provider> */}
+          </Provider>
         </>
       } 
       </div>

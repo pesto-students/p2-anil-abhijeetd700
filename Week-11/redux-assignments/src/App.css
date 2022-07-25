@@ -71,3 +71,36 @@
   background: gray;
   color: rgb(255, 255, 255, .7);
 }
+
+/* Steps assignment CSS */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.steps .add {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.steps .add:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.steps .reset {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.steps .reset:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
