@@ -1,0 +1,32 @@
+1) SELECT *,MIN(weight) FROM items;
+
+2) SELECT * FROM warehouses WHERE location='Pune';
+
+3) SELECT * FROM items WHERE itemno IN
+   (SELECT itemno FROM order_items WHERE cno LIKE 
+   (SELECT cno FROM customer WHERE cname='Abhi'));
+
+4) SELECT * FROM warehouses wh 
+     INNER JOIN
+    (
+      SELECT wid,COUNT(wid) 
+      FROM stores 
+      GROUP BY wid LIMIT 1
+    ) stores
+    ON wh.wid = stores.wid
+
+5) SELECT * FROM items it
+    INNER JOIN
+    (
+     SELECT itemno,COUNT(itemno) cnt 
+     FROM order_items 
+     GROUP BY itemno 
+     ORDER BY cnt 
+     LIMIT 1
+   ) item_cnt
+   ON it.itemno = item_cnt.itemno;
+
+6) SELECT * FROM items WHERE itemno IN
+   (
+    SELECT itemno FROM order_items
+   );
